@@ -3,5 +3,5 @@ class Room < ApplicationRecord
   has_many :users, through: :room_users
   has_many :messages
 
-  validates :name, presence: true
+  validates :content, presence: true
 end
